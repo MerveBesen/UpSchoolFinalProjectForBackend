@@ -50,9 +50,9 @@
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/System.CodeDom.dll
-/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/MediatR.dll
-/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/Application.dll
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/Application.pdb
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/FluentValidation.dll
 /Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/MediatR.dll
+/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/bin/Debug/net7.0/MediatR.Contracts.dll

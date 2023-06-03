@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+I+VQ3E9m92f/P+u7VrZ9qRGGlpmb7id1NnHrbdSmoAP0KcYstyWlzDMtZhUqJijxfxeSu6LJpCb8xeoKDzGhA==",
+  "dgSpecHash": "tej42Sujuodoww11oBxVC3+grqNCQE5Z1Bpz1GtsqGtnrXHhzvU8t6pOBTkOSXm0TssFG7DlvaUduYzQMN86bA==",
   "success": true,
   "projectFilePath": "/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/mervebesen/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.2/fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.aspnetcore.openapi/7.0.3/microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore/7.0.5/microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.5/microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",

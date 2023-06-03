@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "vW+GpAsaMZSn6JXVzQWqZov+TtQru3zE4pKVApog1uqeVMsQO3CAu0sN956u3oVhg2inrSkuASKKH27G3L8aPw==",
+  "dgSpecHash": "4PBPaaJuE2oXXdswhGyv+rL9aTmRZIbZ6KhcGZeEeNR+9p2cT5OB1cedjaQP/f1zR61whhXP7loRAuCGmbF/GA==",
   "success": true,
   "projectFilePath": "/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/mervebesen/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.2/fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore/7.0.5/microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.5/microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.5/microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",

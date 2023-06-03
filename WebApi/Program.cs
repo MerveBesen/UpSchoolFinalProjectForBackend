@@ -1,25 +1,18 @@
-using System.Globalization;
-using System.Text;
-using Application;
+
 using Application.Common.Interfaces;
 using Infrastructure.Persistence.EntityFramework.Contexts;
-using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
-using OpenQA.Selenium.DevTools;
+using WebApi.Hubs;
 using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-    
 // Add services to the container.
 
     builder.Services.AddControllers();
 
-
-    builder.Services.Configure<ApiBehaviorOptions>(options => { options.SuppressModelStateInvalidFilter = true; });
+builder.Services.Configure<ApiBehaviorOptions>(options => { options.SuppressModelStateInvalidFilter = true; });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
@@ -27,6 +20,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder
+            .AllowAnyMethod()
+            .AllowCredentials()
+            .SetIsOriginAllowed((host) => true)
+            .AllowAnyHeader());
+});
 
 //Localizations Files Path
 
@@ -36,11 +38,11 @@ var builder = WebApplication.CreateBuilder(args);
     
     builder.Services.AddScoped<IOrderHubService, OrderHubManager>();
 
-    builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
 
-    builder.Services.AddMemoryCache();
+  //  builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
-    var app = builder.Build();
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
@@ -60,6 +62,10 @@ var builder = WebApplication.CreateBuilder(args);
     app.UseAuthorization();
 
     app.MapControllers();
+
+app.UseCors("AllowAll");
+
+    app.MapHub<LogHub>("/Hubs/LogHub");
 
     app.Run();
     

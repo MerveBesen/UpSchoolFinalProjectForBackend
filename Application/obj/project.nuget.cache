@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YQGFfm8Qktn7JdCgipzUxON6Z/bKXvjhXfb2o6RG1qo473/CK02yrqyBVIg9My54R8Scob2qmd9PEJqIO65nAw==",
+  "dgSpecHash": "LSwMBp/XTIVI1rRixt4ZhPfwXoc1g1UscYqc3x/TMEQWBLpOv76xTbPoWLsvaC9HCuIxV2FybBdzg5effXBU8g==",
   "success": true,
   "projectFilePath": "/Users/mervebesen/Desktop/C#/UpSchoolFinalProjectForBackend/Application/Application.csproj",
   "expectedPackageFiles": [
     "/Users/mervebesen/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.2/fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore/7.0.5/microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.5/microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "/Users/mervebesen/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.5/microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",

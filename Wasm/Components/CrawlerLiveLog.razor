@@ -1,3 +1,4 @@
+@page "/CrawlerLiveLog"
 @using Domain.Dtos
 @using Microsoft.AspNetCore.SignalR.Client
 
@@ -10,8 +11,7 @@
 <div class="fakeScreen">
     @foreach (var log in logs)
     {
-        <p class="line1">@log.Message | @log.SentOn.ToString("g")</p>
-  
+      <p class="line1">@log.Message | @log.SentOn.ToString("g")</p>
     }
 </div>
 
@@ -24,11 +24,11 @@
     protected override async Task OnInitializedAsync()
     {
         hubConnection = new HubConnectionBuilder()
-            //.WithUrl($"{UrlHelperService.SignalRUrl}/SeleniumLogHub")
+            .WithUrl("https://localhost:7029/Hubs/LogHub")
             .WithAutomaticReconnect()
             .Build();
 
-        hubConnection.On<LogDto>("CrawlerLogAdded", (logDto) =>
+        hubConnection.On<LogDto>("NewLogAdded", (logDto) =>
         {
       
             logs.Add(logDto);
@@ -76,7 +76,7 @@
   }
   
   .fakeMenu {
-    width: 550px;
+    width: 850px;
     box-sizing: border-box;
     height: 25px;
     background-color: #bbb;
@@ -88,7 +88,7 @@
   .fakeScreen {
     background-color: #151515;
     box-sizing: border-box;
-    width: 550px;
+    width: 850px;
     margin: 0 auto;
     padding: 20px;
     border-bottom-left-radius: 5px;
@@ -97,10 +97,10 @@
   
   p {
     position: relative;
-    left: 20%;
+    left: 25%;
     margin-left: -8.5em;
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1.00em;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
@@ -119,4 +119,152 @@
     -o-animation: type .5s 1s steps(20, end) forwards;
     animation: type .5s 1s steps(20, end) forwards;
   }
+  
+  .cursor1 {
+      -webkit-animation: blink 1s 2s 2 forwards;
+      -moz-animation: blink 1s 2s 2 forwards;
+      -o-animation: blink 1s 2s 2 forwards;
+      animation: blink 1s 2s 2 forwards;
+    }
+    
+    .line2 {
+      color: #CDEE69;
+      -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+      -moz-animation: type .5s 4.25s steps(20, end) forwards;
+      -o-animation: type .5s 4.25s steps(20, end) forwards;
+      animation: type .5s 4.25s steps(20, end) forwards;
+    }
+    
+    .cursor2 {
+      -webkit-animation: blink 1s 5.25s 2 forwards;
+      -moz-animation: blink 1s 5.25s 2 forwards;
+      -o-animation: blink 1s 5.25s 2 forwards;
+      animation: blink 1s 5.25s 2 forwards;
+    }
+    
+    .line3 {
+      color: #E09690;
+      -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+      -moz-animation: type .5s 7.5s steps(20, end) forwards;
+      -o-animation: type .5s 7.5s steps(20, end) forwards;
+      animation: type .5s 7.5s steps(20, end) forwards;
+    }
+    
+    .cursor3 {
+      -webkit-animation: blink 1s 8.5s 2 forwards;
+      -moz-animation: blink 1s 8.5s 2 forwards;
+      -o-animation: blink 1s 8.5s 2 forwards;
+      animation: blink 1s 8.5s 2 forwards;
+    }
+    
+    .line4 {
+      color: #fff;
+      -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+      -moz-animation: type .5s 10.75s steps(20, end) forwards;
+      -o-animation: type .5s 10.75s steps(20, end) forwards;
+      animation: type .5s 10.75s steps(20, end) forwards;
+    }
+    
+    .cursor4 {
+      -webkit-animation: blink 1s 11.5s infinite;
+      -moz-animation: blink 1s 8.5s infinite;
+      -o-animation: blink 1s 8.5s infinite;
+      animation: blink 1s 8.5s infinite;
+    }
+    
+    @@-webkit-keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    
+    @@-moz-keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    
+    @@-o-keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    
+    @@keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    
+    @@-webkit-keyframes type {
+      to {
+        width: 40em;
+      }
+    }
+    
+    @@-moz-keyframes type {
+      to {
+        width: 40em;
+      }
+    }
+    
+    @@-o-keyframes type {
+      to {
+        width: 40em;
+      }
+    }
+    
+    @@keyframes type {
+      to {
+        width: 40em;
+      }
+    }
   </style>

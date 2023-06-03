@@ -10,10 +10,9 @@ public class ApplicationDbContext:DbContext,IApplicationDbContext
     public DbSet<Order> Orders { get; set; }
     public DbSet<Product> Products { get; set; }
     
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, DbSet<Order> orders, DbSet<Product> products):base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
     {
-        Orders = orders;
-        Products = products;
+    
     }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
